@@ -164,7 +164,6 @@ class OrganizationUpdateAPIView(APIView):
             context['message'] = str(e)
         return Response(context)
 
-# ✅ Organization Delete View
 class OrganizationDeleteAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -240,7 +239,6 @@ class MemberListAPIView(APIView):
         return Response(context)
 
 
-# ✅ Member Update View
 class MemberUpdateAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -280,7 +278,6 @@ class MemberUpdateAPIView(APIView):
         return Response(context)
 
 
-# ✅ Member Delete View
 class MemberDeleteAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
